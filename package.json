@@ -1,0 +1,25 @@
+{
+  "name": "qembassy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nineisten/qEmbassy.git"
+  },
+  "keywords": [
+    "Qubic",
+    "Ambassador",
+    "Ambassador",
+    "Program"
+  ],
+  "author": "Nineisten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nineisten/qEmbassy/issues"
+  },
+  "homepage": "https://github.com/nineisten/qEmbassy#readme",
+  "description": ""
+}
