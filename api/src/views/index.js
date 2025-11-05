@@ -2,6 +2,8 @@ import { top } from "./components/top.js";
 import { footer } from "./components/footer.js";
 import { sidebar } from "./components/sidebar.js";
 import { nav } from "./components/nav.js";
+import {navList} from "../models/navList.js"
+import { list } from "./components/list.js";
 
 
 export const homepageTemplate = ()=>/*html*/`
@@ -17,8 +19,7 @@ export const homepageTemplate = ()=>/*html*/`
         <div id="container" class="container">
             ${top('qEmbassy')}
                 <main id="main_content" class="main_content">
-                    ${sidebar()}
-                        ${nav()}
+                    ${sidebar(nav(list(navList.guest.list)))}
                 </main>
            ${footer()}
         </div>
