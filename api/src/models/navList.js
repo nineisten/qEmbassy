@@ -1,13 +1,11 @@
 
 export const navList={
-    guest:{
-        list:[
+    guest:[
             'home',
             'blog',
             'apply',
             'contact'
-        ]
-    },
+    ],
     locked:[
         'overview',
         'teams',
@@ -15,11 +13,3 @@ export const navList={
         'resources'
     ]
 }
-
-
-
-
-// export const navList = ()=>/*html*/`
-
-
-// `

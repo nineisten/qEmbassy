@@ -1,9 +1,10 @@
-import { top } from "./components/top.js";
-import { footer } from "./components/footer.js";
-import { sidebar } from "./components/sidebar.js";
+import { top } from "./elements/top.js";
+import { footer } from "./elements/footer.js";
+import { sidebar } from "./elements/sidebar.js";
 import { nav } from "./components/nav.js";
 import {navList} from "../models/navList.js"
 import { list } from "./components/list.js";
+import { content } from "./components/content.js";
 
 
 export const homepageTemplate = ()=>/*html*/`
@@ -17,10 +18,11 @@ export const homepageTemplate = ()=>/*html*/`
     </head>
     <body>
         <div id="container" class="container">
-            ${top('qEmbassy')}
-                <main id="main_content" class="main_content">
-                    ${sidebar(nav(list(navList.guest.list)))}
-                </main>
+            ${top('qEmbassy',navList.guest)}
+            <main id="main_content" class="main_content">
+                ${sidebar(nav(list(navList.locked)))}
+                    ${content()}
+            </main>
            ${footer()}
         </div>
     </body>
