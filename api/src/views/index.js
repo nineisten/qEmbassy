@@ -4,7 +4,6 @@ import { sidebar } from "./elements/sidebar.js";
 import { nav } from "./components/nav.js";
 import {navList} from "../models/navList.js"
 import { list } from "./components/list.js";
-import { content } from "./components/content.js";
 
 
 export const homepageTemplate = ()=>/*html*/`
@@ -21,7 +20,9 @@ export const homepageTemplate = ()=>/*html*/`
             ${top('qEmbassy',navList.guest)}
             <main id="main_content" class="main_content">
                 ${sidebar(nav(list(navList.locked)))}
-                    ${content()}
+                <div id="content">
+                    this is the content
+                </div>
             </main>
            ${footer()}
         </div>
